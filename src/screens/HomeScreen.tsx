@@ -9,8 +9,6 @@ const HomeScreen = () => {
     const navigation = useNavigation<NativeStackNavigationProp<ParamListBase>>();
     const profile = useAccount();
 
-    console.log("https://jsonplaceholder.typicode.com/users/" + Math.floor(Math.random() * 11));
-
     return (
         <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
             <Text style={{ color: 'black' }}>Redux Öğreniyorum - HomeScreen</Text>
