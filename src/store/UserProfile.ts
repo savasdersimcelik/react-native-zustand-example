@@ -1,7 +1,7 @@
 import axios from "axios";
 import { create } from "zustand"
 
-interface IUserProfile {
+interface UserProfileEntity {
     name: string,
     username: string,
     email: string,
@@ -10,7 +10,7 @@ interface IUserProfile {
     getUserInfo: () => void
 }
 
-export const useAccount = create<IUserProfile>(set => ({
+export const useAccount = create<UserProfileEntity>(set => ({
     name: "Savaş Dersim Çelik",
     username: "savasdersimcelik",
     email: "savasdersimcelik@gmail.com",
